@@ -24,11 +24,11 @@
     "sourceMap": true,
   },
   "include": [
+    "twin.macro",
     "src",
     "twin.d.ts"
   ],
   "exclude": [
-    "node_modules",
     "**/*.test.ts",
     "**/*.test.tsx",
     "**/*.stories.tsx",

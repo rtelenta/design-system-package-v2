@@ -1,6 +1,6 @@
 {
   "name": "design-system-demo-v3",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "private": false,
   "license": "MIT",
   "main": "lib/index.js",
@@ -14,6 +14,7 @@
     "clean": "rimraf lib",
     "prebuild": "yarn clean",
     "build": "tsc --build \"./tsconfig.json\"",
+    "build2": "react-scripts build",
     "test": "react-scripts test",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
@@ -47,8 +48,6 @@
     ]
   },
   "devDependencies": {
-    "@emotion/react": "^11.1.5",
-    "@emotion/styled": "^11.1.5",
     "@storybook/addon-actions": "^6.2.3",
     "@storybook/addon-essentials": "^6.2.3",
     "@storybook/addon-links": "^6.2.3",
@@ -67,8 +66,12 @@
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "rimraf": "^3.0.2",
-    "tailwindcss": "^2.0.4",
-    "twin.macro": "^2.3.2",
     "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "twin.macro": "^2.3.2",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
+    "tailwindcss": "^2.0.4"
   }
 }
