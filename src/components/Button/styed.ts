@@ -1,7 +1,9 @@
 import tw, { styled, theme } from "twin.macro";
 
-export const ButtonWrapper = styled.div`
+export const ButtonWrapper = styled.div<{}>`
   ${tw`m-10 border border-black`}
+
+  color: ${theme`colors.purple.500`};
 
   .storybook-button {
     font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
